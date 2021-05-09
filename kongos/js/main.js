@@ -8,3 +8,15 @@ $(document).on("dragstart", function(e) {
 $( document ).ready(function() {
     $("#page-loaded").fadeIn();
 });
+
+window.onscroll = function() {onScrollFunction()};
+function onScrollFunction() {
+  if (window.pageYOffset > 0) {
+	$(".header-bg").removeClass("transform-header");
+  } else {
+    $(".header-bg").addClass("transform-header");
+  }
+}
+
+//add sticky when more and up
+//Bilder ,texter, spotify.
