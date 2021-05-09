@@ -1,0 +1,109 @@
+@font-face { 
+  font-family: D-DIN-Bold; src: url("../fonts/D-DIN-Bold.woff2") format("woff2");
+  font-style: normal; 
+  font-weight: 400; 
+  font-display: block; 
+}
+
+html{
+  scroll-behavior:smooth
+}
+
+body {
+  background: #000;
+  margin: 0px;
+}
+
+#page-loaded {
+  display:none;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.header {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 100px;
+}
+
+.header-inner {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  height: 100%;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.header-img {
+  position: absolute;
+  top: 32px;
+  left: 50px;
+  width: 210px;
+}
+
+.header-links {
+  display: inline-block;
+  left: 285px;
+  position: absolute;
+  top: 19px;
+  color: white;
+}
+
+.head-links {
+  position: relative;
+  list-style-type: none;
+  padding: 0;
+}
+
+.ul-links li {
+  position: relative;
+  display: inline-block;
+  margin: 0 12px
+}
+
+.ul-links a {
+  text-transform: uppercase;
+  font-weight: 500;
+  font: 14px/28px D-DIN-Bold, Arial, Verdana, sans-serif;
+}
+
+a:after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #fff;;
+  transform: scaleX(0);
+  transform-origin: right center;
+  transition: transform .6s cubic-bezier(.19,1,.22,1),
+  -webkit-transform .6s cubic-bezier(.19,1,.22,1);
+}
+
+.ul-links a:hover:after{
+  transition-duration: 0.4s;
+  transform: scaleX(1);
+  transform-origin: left center;
+}
+
+a:active, a:link, a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+.page1 {
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://images.squarespace-cdn.com/content/v1/57d71619e4fcb51b1e3f9343/1604268396794-TNHOIH6DFP5JX5IDKOXG/ke17ZwdGBToddI8pDm48kKwHfgeyahAC63FHuu4Sk957gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0kMlYkjvFlctRdmAM11rxFRj1Pd8A2G_VuUgKJK6qPk5XnszDGgBl20J-tV2tdpu8Q/untitled-20201021-331.jpg?format=2500w);
+}
